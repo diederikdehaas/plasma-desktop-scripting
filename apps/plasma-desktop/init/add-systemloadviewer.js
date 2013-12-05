@@ -1,9 +1,13 @@
-var pnls = panels();
-print("Panels: " + pnls.length);
-for(i = 0; i < pnls.length; i++) {
-  var pnl = pnls[i];
-  print("Panel: " + pnl.name);
-  var sysldvwr = pnl.addWidget("systemloadviewer");
-  sysldvwr.index -= 1;
-  sysldvwr.writeConfig("show_multiple_cpus", true);
+var findObjects = loadTemplate('org.cknow.plasma-desktop-scripting.findObjects');
+var pnl = findObjects.findPanelByName("defaultPanel");
+var sysldvwr = findObject.findWidgetByType("systemloadviewer");
+
+if( pnl == null || typeof pnl == "undefined") {
+   pnl = panels()[0];
 }
+
+if( sysldvwr == null || typeof sysldvwr == "undefined") {
+   sysldvwr = pnl.addWidget("systemloadviewer");
+   sysldvwr.writeConfig("show_multiple_cpus", true);
+}
+
