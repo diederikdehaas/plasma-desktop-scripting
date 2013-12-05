@@ -1,0 +1,17 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Find Objects
+Name[en_GB]=Find Objects
+Name[nl]=Objects zoeken
+Type=Service
+ServiceTypes=Plasma/LayoutTemplate
+X-Plasma-Shell=plasma-desktop
+X-KDE-PluginInfo-Author=Diederik de Haas
+X-KDE-PluginInfo-Email=github@cknow.org
+X-KDE-PluginInfo-Name=org.cknow.plasma-desktop-scripting.findObjects
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=https://github.com/diederikdehaas/plasma-desktop-scripting
+X-KDE-PluginInfo-Category=
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPLv2
+X-KDE-PluginInfo-EnabledByDefault=true
