@@ -1,6 +1,6 @@
 var findObjects = loadTemplate('org.cknow.plasma-desktop-scripting.findObjects');
 var pnl = findObjects.findPanelByName("defaultPanel");
-var sysldvwr = findObject.findWidgetByType("systemloadviewer");
+var sysldvwr = findObjects.findWidgetByType("systemloadviewer");
 
 if( pnl == null || typeof pnl == "undefined") {
    pnl = panels()[0];
